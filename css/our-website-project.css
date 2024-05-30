@@ -1,0 +1,47 @@
+
+
+
+
+.website__title {
+    font-size: 80px;
+    /* font-style: normal; */
+    font-weight: 800;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.website__description {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.website__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.website__item img{
+    box-shadow: 10px 10px 55px -20px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 55px -20px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 55px -20px rgba(0,0,0,0.75);
+    width: 700px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 25px;
+
+}
+
+h4 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.website__list li {
+    list-style: circle;
+    margin-bottom: 20px;
+    /* line-height: 25px; */
+}
+
+/* a:hover {
+    color: RGB(5, 99, 193);
+} */

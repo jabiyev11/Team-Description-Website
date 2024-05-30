@@ -1,0 +1,249 @@
+:root {
+  --background: #2C3333;
+  --text-primary: #A5C9CA;
+  --text-hover: #738e8f;
+  --text-secondary: #E7F6F2;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/* code from style.css*/
+* {
+    font-family: 'Poppins';
+    font-weight: 400;
+    line-height: 40px;
+    transition: all 0.3s ease-in-out !important;
+}
+
+
+a {
+  text-decoration: none;
+  color: #03045E;
+  color: var(--text-primary);
+}
+a:hover {
+  color: var(--text-hover);
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+  margin: 0;
+  margin-top: 150px;
+  /*background-color: #FFFEF0;*/
+  background-color: var(--background);
+  font-family: 'Poppins';
+  color: var(--text-primary);
+  /* margin:0px; */
+  /* padding:0px; */
+  line-height: 40px;
+
+}
+
+
+section{
+    width:100%;
+    min-height:150vh;
+    background-size: cover;
+
+}
+
+h1, h2,h3,h4,h5, p {
+    margin: 0;
+}
+p, a{
+  color: var(--text-secondary);
+}
+a {
+    font-style: none;
+    text-decoration: none;
+}
+li {
+  list-style: none;
+}
+ul, ol {
+  padding: 0;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+/* HAVBAR */
+.nav__menu {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+
+  color: var(--text-primary);
+  margin: 0;
+  /*background-color: #FFFEF0;*/
+  background-color: var(--background);
+  box-shadow: 0px 1px 160px -43px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 1px 160px -43px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 1px 160px -43px rgba(0,0,0,0.75);
+}
+.nav__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+/* .nav__active {
+  
+} */
+
+.nav__logo img {
+  height: 50px;
+  margin-right: 25px;
+
+}
+.nav__list {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 30px;
+  width: 100%;
+
+}
+
+/*navigation underline part*/
+
+
+
+  nav a {
+    position: relative;
+    padding: 15px;
+    /* color: white; */
+    text-decoration: none;
+    overflow: hidden;
+    font-weight:bold;
+  }
+  
+  nav a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background-color: #03045E; 
+    background-color: var(--text-primary); 
+    transition: width 0.3s ease;
+
+    
+  }
+  
+  nav a:hover::before {
+    width: 100%;
+  }
+  
+
+
+  
+
+.nav__item {
+}
+.nav__active {
+}
+
+
+.nav__theme img{
+  width: 40px;
+  /* background-color: aliceblue; */
+  height: 40px;
+  float: right;
+  
+}
+
+
+.member__icon {
+  width: 40px;
+  margin-right: 10px;
+  /* filter: invert(87%) sepia(9%) saturate(595%) hue-rotate(133deg) brightness(88%) contrast(90%); */
+}
+
+.img-filter {
+  filter: invert(99%) sepia(61%) saturate(442%) hue-rotate(105deg) brightness(82%) contrast(91%);
+}
+.img-filter:hover {
+  filter: invert(57%) sepia(22%) saturate(298%) hue-rotate(133deg) brightness(90%) contrast(85%);
+}
+
+.gotopbtn{
+  position: fixed;
+  width:40px;
+  height:40px;
+  bottom:20px;
+  right:40px;
+  border-radius: 50px;
+  text-align:center;
+  background-color: var(--text-primary);
+  color: var(--text-secondary);
+
+}
+
+.nav__menu.hidden {
+  top: -100px;
+  transition: top 0.3s;
+}
+
+.nav__menu.scrolled {
+  top: 0;
+  transition: top 0.3s;
+}
+
+/*
+ this is code for transitioning between pages
+*/
+body {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+/*
+*/
+
+.footer {
+  height: 70px;
+  width: 100%;
+  box-shadow: 0px -6px 46px -25px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px -6px 46px -25px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px -6px 46px -25px rgba(0,0,0,0.75);
+}
+.footer .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__img {
+  width: auto;
+  height: 40px;
+
+}
+
